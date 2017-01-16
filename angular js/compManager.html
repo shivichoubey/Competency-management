@@ -1,0 +1,71 @@
+<html>
+   
+   <head>
+      <title>Angular JS Modules</title>
+     
+	     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+   
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.4.0.js"></script>
+
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	  
+      <script src = "CompTracker.js"></script>
+      <script src = "CompController.js"></script>
+      <style>
+         table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+         }
+         
+         table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+         }
+         
+         table tr:nth-child(even) {
+            background-color: #ffffff;
+         }
+      </style>
+      
+   </head>
+   
+   <body>
+   <div class="container-fluid">
+      <h1>Competency Tracker</h1>
+      <div ng-app = "mainApp" ng-controller = "CompController">
+         
+
+            
+         
+         
+               
+                  <table>
+                     <tr>
+                        <th>Competency Id</th>
+                        <th>Competency Name</th>
+						<th>Level</th>
+                        <th>Assignment Date</th>
+						<th>Completion Date</th>
+                        <th>Status</th>
+                     </tr>
+                  
+                     <tr ng-repeat = "comp in competency.competencyDetails">
+                        <td>{{comp.id}}</td>
+						<td>{{comp.name}}</td>
+						<td>{{comp.level}}</td>
+						<td>{{comp.asignDate}}</td>
+						<td>{{comp.completeDate}}</td>
+						<td>{{comp.status}}</td>
+             
+                     </tr>
+                  </table>
+                  
+               </td>
+           
+    
+         
+      </div>
+	  </div>
+      
+   </body>
+</html>

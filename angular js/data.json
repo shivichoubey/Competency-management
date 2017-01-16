@@ -1,0 +1,28 @@
+{
+  "competencyDetails": [
+    {
+      "id": "856267",
+      "name": "java",
+      "level": "E0",
+      "asignDate": "9/1/2017",
+      "completeDate": "",
+      "status": "Incomplete"
+    },
+    {
+      "id": "737444",
+      "name": "html",
+      "level": "E0",
+      "asignDate": "9/1/2017",
+      "completeDate": "",
+      "status": "PA"
+    },
+    {
+      "id": "101916",
+      "name":"css",
+      "level":"E1",
+      "asignDate": "9/1/2017",
+      "completeDate": "",
+      "status":"PA"
+    }
+  ]
+}
